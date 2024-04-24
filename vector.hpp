@@ -99,6 +99,9 @@ public:
      */
     bool erase(unsigned int position);
 
+    friend void sort(Vector& value);
+
+    friend std::ostream& operator<<(std::ostream& os, const Vector& value);
 private:
     /** Stores the current number of elements in the vector. */
     unsigned int elementNum;
